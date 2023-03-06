@@ -1,0 +1,101 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>ScratchIt Test Suite</title>
+    <!-- Load local jQuery. -->
+   <script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+ ></script>
+    <!-- Load local QUnit. -->
+    <link rel="stylesheet" href="css/scratchit.css" media="all" />
+
+
+    <!-- Load local lib and tests. -->
+    <script src="./src/scratchit.js"></script>
+
+<style>
+.scratchit {
+    display: inline-block;
+}
+.scratch_detail {
+    position: absolute;
+    top: 0px;
+    padding: 5px 10px;
+    left: 0px;
+    background: #ffff;
+    width: 280px;
+    height: 140px;
+}
+.scratch_card {
+    padding: 40px 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.scratch_detail h2 {
+    padding: 0px;
+    margin: 5px 10px;
+}
+.scratch_detail h3 {
+    margin: 5px 0px;
+}
+.scratch_detail h1 {
+    margin: 5px 0px;
+}
+.scratch_detail img {
+    width: 50px;
+    height: 50px;
+}
+</style>
+  </head>
+  <body>
+  <div class="scratch_card">
+    <div class="scratchit">
+		<img src="src/scratch.png" width="300" height="150" />
+		<div class="scratch_detail">
+		  <h2>'Allo, 'Allo!</h2>
+    <h3>You won Rs.50 cashback!!!</h3>
+	<img src="src/cup.png">
+	</div>
+		<!-- <img src="src/cat.jpg" width="400" height="200" /> -->
+      <canvas width="300" height="150"></canvas>
+    </div>
+      <div class="scratchit">
+		<img src="src/scratch.png" width="300" height="150" />
+		<div class="scratch_detail">
+    <h3>You won </h3>
+    <h1><code>Rs.150 cashback!!!</code></h1>
+	<img src="src/cup.png">
+	</div>
+		<!-- <img src="src/cat.jpg" width="400" height="200" /> -->
+      <canvas width="300" height="150"></canvas>
+    </div>
+	  <div class="scratchit">
+		<img src="src/scratch.png" width="300" height="150" />
+		<div class="scratch_detail">
+		  <h2>'Allo, 'Allo!</h2>
+    <h1><code>HlkafSYc</code></h1>
+	<img src="src/cup.png">
+	</div>
+		<!-- <img src="src/cat.jpg" width="400" height="200" /> -->
+      <canvas width="300" height="150"></canvas>
+    </div>
+	  <div class="scratchit">
+		<img src="src/scratch.png" width="300" height="150" />
+		<div class="scratch_detail">
+    <h1 style="font-size:20px;"><code>Better Luck next time</code></h1>
+	<img src="src/better.png">
+	
+	</div>
+		<!-- <img src="src/cat.jpg" width="400" height="200" /> -->
+      <canvas width="300" height="150"></canvas>
+    </div>
+    
+    <script>
+     $(function() {
+        var $scratchit = $('.scratchit').scratchIt();
+      });
+
+    </script>
+  </body>
+</html>
